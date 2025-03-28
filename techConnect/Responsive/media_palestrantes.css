@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+    }
+
+    header img{
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main{
+        flex-direction: column;
+        width: 200px;
+        margin-top: 550px;
+    }
+
+    footer{
+        margin-top: 600px;
+    }
+    
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+#title{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'work sans', sans-serif;
+    color: white;
+    text-shadow: 1.4px 1px 1.4px #446DF6;
+}
+
+span{
+    color: #446DF6;
+    text-shadow: 1px 1px 1.4px #ffffff;
+}
+
+footer p{
+    color: white;
+    text-shadow: 0.7px 0.7px 0.7px #577dfa;
+    margin-top: 60px;
+    font-size: 1.3rem;
+}
+
+#span02{
+    color: #446DF6;
+    text-shadow: none;
+    font-weight: bolder;
+}

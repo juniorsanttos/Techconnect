@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*O botão vai ficar flutuando de cima para baixo */
+@keyframes floatingbutton {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: 'work sans', sans-serif;
+    background-color: #02060a;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+main{
+    width: 1070px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+
+/* Estilizando o conteudo da section */
+section{
+    background-color: #ffffff;
+    text-align: center;
+    font: bold;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 350px;
+    width: 250px;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 10px;
+    
+}
+
+/* Animando a section para flutuar quando selecionada */
+section:hover{
+    animation: floatingbutton 2s ease-in-out infinite;
+    color: #000000;
+    background-color: #b2c3f4;
+    transition: .5s
+}
+
+/* Estilizando a imagem e texto do 1o palestrante */
+#palestrante_01 img{
+    margin-top: 10px;
+    margin-right: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+/* Estilizando a imagem do 1o palestrante */
+#perfil01{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+/* Estilizando o nome e texto do 1o palestrante */
+#ana_martins{
+    font-weight: 500;
+}
+
+#ana_martins p{
+    text-align: center;
+    text-indent: 10px;
+    line-height: 15px;
+}
+
+/* Adicionando Paragrafo ao passar o mouse!*/
+#ana_martins p::after{
+    content:"ela se destaca na criação de soluções inteligentes para desafios complexos. Seu conhecimento teorico e prática da engenharia de software.";
+    opacity: 0;
+}
+
+/* Adicionando efeito de opacidade!*/
+#ana_martins p:hover::after{
+    opacity: 1;
+    transition: .15s;
+}
+
+
+/* Estilizando a imagem e texto do 2o palestrante */
+#palestrante_02 img{
+    margin-top: 10px;
+    margin-right: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/* Estilizando a imagem do 2o palestrante */
+#perfil02{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+/* Estilizando o nome e texto do 2o palestrante */
+#james_mark{
+    font-weight: 500;
+}
+
+#james_mark p{
+    text-align: center;
+    text-indent: 10px;
+    line-height: 15px;
+}
+
+/* Adicionando Paragrafo ao passar o mouse!*/
+#james_mark p::after{
+    content: "James está sempre em busca de aprimoramento, atua na construção de aplicações eficientes que impulsionam a transformação digital.";
+    opacity: 0;
+}
+
+#james_mark p:hover::after{
+    opacity: 1;
+    transition: .15s;
+}
+
+
+/* Estilizando a imagem e texto do 3o palestrante */
+#palestrante_03 img{
+    margin-top: 10px;
+    margin-right: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/* Estilizando a imagem do 3o palestrante */
+#perfil03{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}    
+
+/* Estilizando o nome e texto do 3o palestrante */
+#artur_silva{
+    font-weight: 500;
+}
+
+#artur_silva p{
+    text-align: center;
+    text-indent: 10px;
+    line-height: 15px;
+}
+
+/* Adicionando Paragrafo ao passar o mouse!*/
+#artur_silva p::after{
+    content: "Sua paixão por resolver problemas complexos o levou a trabalhar em projetos de grande escala, com foco em automação e otimização de processos.";
+    opacity: 0;
+}
+
+#artur_silva p:hover::after{
+    opacity: 1;
+    transition: .15s;
+}
+
+/* Estilizando a imagem e texto do 4o palestrante */
+#palestrante_04 img{
+    margin-top: 10px;
+    margin-right: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}    
+
+/* Estilizando a imagem do 4o palestrante */
+#perfil04{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+/* Estilizando o nome e texto do 4o palestrante */
+#Amy_Souza{
+    font-weight: 500;
+}
+
+#Amy_Souza p{
+    text-align: center;
+    text-indent: 10px;
+    line-height: 15px;
+}
+
+/* Adicionando Paragrafo ao passar o mouse!*/
+#Amy_Souza p::after{
+    content: "Com um olhar atento às ameaças emergentes, ela trabalha na implementação de estratégias proativas para proteger dados e infraestruturas críticas.";
+    opacity: 0;
+}
+
+#Amy_Souza p:hover::after{
+    opacity: 1;
+    transition: .15s;
+}
+
+/* Criando uma classe para realizar animação*/
+.item{
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+
+/* Adicionando Animação de opacidade*/
+.item:hover > :not(:hover){
+    opacity: .4;
+    transition: 0.5s;
+    transform: scale(.9);
+}
+
+.item:hover{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #446df6;
+    transition: .35s;
+}
+
+p{
+    text-align: center;
+    text-indent: 10px;
+    line-height: 15px;
+}
+
+#btn_inscrever{
+    border: 2px solid #446df6;
+    border-radius: 10px;
+    padding: 7px 20px 7px 20px;
+}
+
+#btn_inscrever:hover{
+    background-color: #446df6;
+    color: #02060a;
+    transition: 0.5s;
+    cursor: pointer;
+}
